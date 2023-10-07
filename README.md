@@ -10,3 +10,4 @@
 
 - ['Task 05'](https://subodhgaikwad70.github.io/Tailwindcss/Task05/index.html)
 
+- ['Task 0'](https://subodhgaikwad70.github.io/Tailwindcss/tailwind/index.html)
