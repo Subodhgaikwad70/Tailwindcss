@@ -1,7 +1,7 @@
 # Tailwindcss
 
 - ['Task 01'](https://subodhgaikwad70.github.io/Tailwindcss/Task01/index.html)
-- 
+
 - ['Task 02'](https://subodhgaikwad70.github.io/Tailwindcss/Task02/index.html)
 
 - ['Task 03'](https://subodhgaikwad70.github.io/Tailwindcss/Task03/index.html)
