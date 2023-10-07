@@ -13,3 +13,8 @@ module.exports = {
 ## cmd
 
 npx tailwindcss -i ./input.css -o ./style.css --watch
+
+
+## Deployed 
+
+[Subodh](https://subodhgaikwad70.github.io/Tailwindcss/index.html)
