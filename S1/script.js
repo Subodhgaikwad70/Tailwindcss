@@ -4,9 +4,12 @@ const imageUpload = document.getElementById("imageUpload");
 const palette = document.querySelector(".palette");
 const roomImageUpload = document.getElementById("roomImageUpload");
 
+
 // Function to change room color
 function changeRoomColor(color) {
     room.style.backgroundColor = color;
+    room.style.backgroundImage = 'none';
+    // console.log(room.style.backgroundImage);
 }
 
 // Event listener for image upload
@@ -36,3 +39,11 @@ colors.forEach((color) => {
     colorOption.addEventListener("click", () => changeRoomColor(color));
     palette.appendChild(colorOption);
 });
+
+
+function reset() {    
+    image.src = "./res/img4.jpg";
+    room.style.backgroundImage = "url('./res/room_1.jpg')";
+}
+
+reset()

@@ -36,7 +36,6 @@
 }
 
 #image {
-    
     border-radius: 5px;
     width: 30%;
     height: 60%;
@@ -49,11 +48,13 @@
     display: inline-block;
     padding: 10px;
     background-color: #ffffffec; /* Add your desired background color */
+    background-image: url('./res/room_1.jpg');
     color: #fff;
     border-radius: 5px;
     cursor: pointer;
     text-align: center;
     margin: 10px;
+
 }
 
 .file-upload img {
@@ -101,4 +102,18 @@
 
 .hidden {
     display: none;
+}
+
+#reset {
+    cursor: pointer;
+    color: #ffffffee;
+    width: 25px;
+    aspect-ratio: 1;
+    background-color: transparent;
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    z-index: 100;
+    position: absolute;
+    left: 10px;
+    top: 10px;
 }
