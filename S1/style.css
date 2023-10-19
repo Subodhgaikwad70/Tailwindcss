@@ -65,12 +65,17 @@
     width: 40px;
     aspect-ratio: 1;
     display: flex;
+    background-color: #ffffff9a;
     align-items: center;
     justify-content: center;
     border-radius: 50%;
     position: absolute;
     bottom: 60px;
     right: 10px;
+}
+
+.hover:hover {
+    filter: invert(25%);
 }
 
 .file-upload-room {
