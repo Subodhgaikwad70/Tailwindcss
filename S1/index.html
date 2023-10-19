@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Picture Showcase</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+  <div class="gallary">
+    <div class="container">
+      <div class="room">
+        <img id="image" src="./res/room_1.jpg" alt="Image">
+        <label for="imageUpload" class="file-upload file-upload-image">
+          <img src="./res/file-3-fill.svg" alt="File Icon">
+        </label>
+        <input class="hidden" type="file" id="imageUpload" accept="image/*">
+        <label for="roomImageUpload" class="file-upload file-upload-room">
+          <img src="./res/pantone-fill.svg" alt="Theme Icon">
+        </label>
+        <input class="hidden" type="file" id="roomImageUpload" accept="image/*">
+      </div>
+      <div class="palette">
+        <!-- Color palette options will go here -->
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
