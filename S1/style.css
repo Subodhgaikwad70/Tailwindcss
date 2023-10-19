@@ -47,27 +47,29 @@
 .file-upload {
     display: inline-block;
     padding: 10px;
-    background-color: #ffffffec; /* Add your desired background color */
-    background-image: url('./res/room_1.jpg');
+    /* background-color: #979797ec; */
+    /* background-image: url('./res/room_1.jpg'); */
     color: #fff;
     border-radius: 5px;
     cursor: pointer;
     text-align: center;
     margin: 10px;
-
 }
 
 .file-upload img {
     width: 16px;
     vertical-align: middle;
-    filter: invert(40%);
+    /* filter: invert(40%); */
 }
 
 .file-upload-image, .file-upload-room {
     width: 40px;
     aspect-ratio: 1;
     display: flex;
-    background-color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.4);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    /* background-color: #ffffff; */
     align-items: center;
     justify-content: center;
     border-radius: 50%;
@@ -77,7 +79,7 @@
 }
 
 .hover:hover {
-    filter: invert(25%);
+    background: blur(5px);
 }
 
 .file-upload-room {
@@ -105,13 +107,15 @@
 }
 
 #reset {
+    /* padding: 5px; */
+    border-radius: 50px;
     cursor: pointer;
     color: #ffffffee;
-    width: 25px;
+    width: 30px;
     aspect-ratio: 1;
-    background-color: transparent;
-    -webkit-backdrop-filter: blur(5px);
-    backdrop-filter: blur(5px);
+    /* background-color: rgba(255, 255, 255, 0.4); */
+    /* -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px); */
     z-index: 100;
     position: absolute;
     left: 10px;
