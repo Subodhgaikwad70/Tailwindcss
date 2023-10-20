@@ -2,6 +2,7 @@ const room = document.querySelector(".room");
 const image = document.getElementById("image");
 const imageUpload = document.getElementById("imageUpload");
 const palette = document.querySelector(".palette");
+const backgrounds = document.querySelector(".backgrounds");
 const roomImageUpload = document.getElementById("roomImageUpload");
 
 
@@ -11,6 +12,14 @@ function changeRoomColor(color) {
     room.style.backgroundImage = 'none';
     // console.log(room.style.backgroundImage);
 }
+
+function changeRoom(roomImageURL) {
+    room.style.backgroundImage = `url(${roomImageURL})`;
+    room.style.backgroundColor = 'none';
+    // console.log(room.style.backgroundImage);
+}
+
+
 
 // Event listener for image upload
 imageUpload.addEventListener("change", function (event) {
@@ -29,6 +38,19 @@ roomImageUpload.addEventListener("change", function (event) {
         room.style.backgroundImage = `url(${roomImageURL})`;
     }
 });
+
+
+const rooms = ["./res/room_1.jpg", "./res/room_2.webp", "./res/room_3.webp", "./res/room_4.webp", "./res/room_5.webp", "./res/room_6.webp"]
+rooms.forEach((room) => {
+    const roomOption = document.createElement("div");
+    roomOption.className = "room-option";
+    roomOption.style.backgroundImage = `url(${room})`;
+    roomOption.style.backgroundSize = "cover";
+    roomOption.addEventListener("click", () => changeRoom(room));
+    backgrounds.appendChild(roomOption);
+});
+
+
 
 // Create color palette options
 const colors = ["#ffffff", "#f0f0f0", "#cccccc", "#999999", "#666666"];
